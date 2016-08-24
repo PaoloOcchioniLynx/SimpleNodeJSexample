@@ -21,11 +21,11 @@ http.createServer(function(request, response) {
       console.error(err);
     });
 
-    var num1 = 2;
-    var num2 = 2;
+    var num1 = 5;
+    var num2 = 5;
 
     bind.toFile('home.html', {
-            nome: 'Somma-Prodotto',
+            nome: 'Somma-Prodotto-Dev',
             r1: math.sum(num1,num2),
             r2: math.prod(num1,num2)
         }, function(data) {
@@ -33,7 +33,7 @@ http.createServer(function(request, response) {
             response.end(data);
         });
 
-    console.log(math.sum(2,2));
+    console.log(math.sum(num1,num2));
 
 
   });
