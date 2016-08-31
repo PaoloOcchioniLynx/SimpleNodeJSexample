@@ -1,5 +1,5 @@
 
-var port = 80;
+var port = process.env.PORT || 1337;
 var http = require('http');
 var math = require('./math.js');
 var bind = require("bind");
