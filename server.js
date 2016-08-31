@@ -1,5 +1,5 @@
 
-var port = 8080;
+var port = 80;
 var http = require('http');
 var math = require('./math.js');
 var bind = require("bind");
